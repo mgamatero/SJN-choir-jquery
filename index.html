@@ -44,8 +44,8 @@
                     aria-expanded="false" id="panginoon-btn">
                     PANGINOON MAAWA KA
                 </a>
-                
-                
+
+
             </div>
         </div>
         <div id="entrance" class="collapse" style="overflow: scroll"></div>
@@ -78,7 +78,7 @@
         <div class="row">
             <div class="col-md-3"><em>OFFERTORY:</em></div>
             <div class="col-md-9">
-                    <a class="btn btn-success btn-block" data-toggle="collapse" href="#offertory" role="button"
+                <a class="btn btn-success btn-block" data-toggle="collapse" href="#offertory" role="button"
                     aria-expanded="false" id="mariang-btn">
                     MARIANG INA KO
                 </a>
@@ -119,29 +119,29 @@
         <div class="row">
             <div class="col-md-3"><em>COMMUNION:</em></div>
             <div class="col-md-9">
-                    <a class="btn btn-success btn-block" data-toggle="collapse" href="#communion" role="button"
+                <a class="btn btn-success btn-block" data-toggle="collapse" href="#communion" role="button"
                     aria-expanded="false" id="stella-btn">
                     STELLA MARIS
                 </a>
             </div>
         </div>
-<div id="communion"></div>
+        <div id="communion"></div>
 
         <div class="row">
             <div class="col-md-3"><em>MEDITATION:</em></div>
             <div class="col-md-9">
-                    <a class="btn btn-success btn-block" data-toggle="collapse" href="#meditation" role="button"
+                <a class="btn btn-success btn-block" data-toggle="collapse" href="#meditation" role="button"
                     aria-expanded="false" id="aba-btn">
                     ABA GINOONG MARIA
                 </a>
             </div>
         </div>
-<div id="meditation"></div>
+        <div id="meditation"></div>
 
         <div class="row">
             <div class="col-md-3"><em>RECESSIONAL:</em></div>
             <div class="col-md-9">
-                    <a class="btn btn-success btn-block" data-toggle="collapse" href="#recessional" role="button"
+                <a class="btn btn-success btn-block" data-toggle="collapse" href="#recessional" role="button"
                     aria-expanded="false" id="immaculate-btn">
                     IMMACULATE MOTHER
                 </a>
@@ -170,34 +170,31 @@
 
             $(document).on('click', '#salve-btn', () => {
                 $('#entrance').empty();
-                PDFObject.embed("./assets/song_files/01 SALVE REGINA.pdf","#entrance");
-                // $('#entrance').append('<iframe src="./assets/song_files/01 SALVE REGINA.pdf" scrolling="yes" allowfullscreen></iframe>')             
+                PDFObject.embed("./assets/song_files/01 SALVE REGINA.pdf", "#entrance");
             })
-            
+
             $(document).on('click', '#panginoon-btn', () => {
                 $('#entrance').empty();
-                PDFObject.embed("./assets/song_files/02 Panginoon, Maawa Ka.pdf","#entrance");
-                // $('#entrance').append('<iframe src="https://drive.google.com/file/d/1u6zHSdulwX485OwFk2p48Mb0uekkV1Sd/preview"></iframe>')             
-                // $('#entrance').append('<iframe src="./assets/song_files/02 Panginoon, Maawa Ka.pdf" scrolling="yes"></iframe>')             
+                PDFObject.embed("./assets/song_files/02 Panginoon, Maawa Ka.pdf", "#entrance");
             })
 
             $(document).on('click', '#mariang-btn', () => {
                 $('#offertory').empty();
-                $('#offertory').append('<iframe src="./assets/song_files/08 MARIANG INA KO.pdf" scrolling="yes"></iframe>')             
+                PDFObject.embed("./assets/song_files/08 MARIANG INA KO.pdf", "#offertory");
             })
 
             $(document).on('click', '#stella-btn', () => {
                 $('#communion').empty();
-                $('#communion').append('<iframe src="./assets/song_files/04 Stella Maris (Francisco).pdf" scrolling="yes"></iframe>')             
+                PDFObject.embed("./assets/song_files/04 Stella Maris (Francisco).pdf", "#communion");
             })
 
             $(document).on('click', '#aba-btn', () => {
                 $('#meditation').empty();
-                $('#meditation').append('<iframe src="./assets/song_files/05 ABA GINOONG MARIA.pdf" scrolling="yes"></iframe>')             
+                PDFObject.embed("./assets/song_files/05 ABA GINOONG MARIA.pdf", "#meditation");
             })
             $(document).on('click', '#immaculate-btn', () => {
                 $('#recessional').empty();
-                $('#recessional').append('<iframe src="./assets/song_files/08 Immaculate Mother.pdf" scrolling="yes"></iframe>')             
+                PDFObject.embed("./assets/song_files/08 Immaculate Mother.pdf", "#recessional");
             })
         })
     </script>
