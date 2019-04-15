@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.1.1/pdfobject.js"></script>
     <title>SJN - FOGS</title>
 </head>
 
@@ -169,13 +170,15 @@
 
             $(document).on('click', '#salve-btn', () => {
                 $('#entrance').empty();
-                $('#entrance').append('<embed src="./assets/song_files/01 SALVE REGINA.pdf" scrolling="yes" allowfullscreen></embed>')             
+                PDFObject.embed("./assets/song_files/01 SALVE REGINA.pdf","#entrance");
+                // $('#entrance').append('<iframe src="./assets/song_files/01 SALVE REGINA.pdf" scrolling="yes" allowfullscreen></iframe>')             
             })
-
+            
             $(document).on('click', '#panginoon-btn', () => {
                 $('#entrance').empty();
+                PDFObject.embed("./assets/song_files/02 Panginoon, Maawa Ka.pdf","#entrance");
                 // $('#entrance').append('<iframe src="https://drive.google.com/file/d/1u6zHSdulwX485OwFk2p48Mb0uekkV1Sd/preview"></iframe>')             
-                $('#entrance').append('<iframe src="./assets/song_files/02 Panginoon, Maawa Ka.pdf" scrolling="yes"></iframe>')             
+                // $('#entrance').append('<iframe src="./assets/song_files/02 Panginoon, Maawa Ka.pdf" scrolling="yes"></iframe>')             
             })
 
             $(document).on('click', '#mariang-btn', () => {

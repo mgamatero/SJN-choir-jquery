@@ -16,3 +16,8 @@ iframe{
     -webkit-overflow-scrolling: touch;
     overflow: auto;
 }
+
+.pdfobject-container{
+    height:700px;
+    width:100%;
+}
