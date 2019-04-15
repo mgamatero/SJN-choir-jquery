@@ -12,7 +12,6 @@ body {
 
 iframe{
     width:100%;
-    min-height:660px;
-    -webkit-overflow-scrolling: touch;
+    min-height:2000px;
     overflow: scroll;
 }
