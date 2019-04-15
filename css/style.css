@@ -9,3 +9,8 @@ body {
 .mocs{
     color:blue;
 }
+
+iframe{
+    width:100%;
+    min-height:660px;
+}
