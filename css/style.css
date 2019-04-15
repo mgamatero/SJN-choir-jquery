@@ -1,108 +1,11 @@
-body{
-    font-family: 'Raleway', sans-serif;
+body {
+    font-size: 1.6rem;
 }
 
-#logo{
-    max-width: 75px;
-    border: solid 1px rgb(235, 228, 228);
+.row{
+    margin:1rem;
 }
 
-.navbar{
-    font-weight:100; 
-    position:absolute;
-    top:0;
-    right:0;
-    left:0;
-    z-index:3;
+.mocs{
+    color:blue;
 }
-
-.nav-item{
-    font-size:1.4 rem;
-    }
-
-.nav-link:hover{
-    border-bottom: 3px solid rgb(0, 0, 0);
-    transition: border 0.3s;
-}
-
-#showcase-section {
-    background: url("../img/fortune_top_section.jpg") top center / cover no-repeat;
-    min-height: 650px;
-    position:relative;
-      
-  }  
-
-  #showcase-section #showcase-section-text{
-      z-index:2;
-  }
-
-
-
-  #showcase-section h1{
-     font-family: 'Hammersmith One', sans-serif;
-     line-height:1
-  }
-
-
-  
-  .dark-overlay{
-    background: rgba(0,0,0,0.1);
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    z-index:1;
-  }
-
-  
-  .history-jumbotron, .merienda-jumbotron{
-    background-color: #0e420e;
-    opacity:.90;
-}
-
-.menu-jumbotron{
-    background-color: rgb(97, 9, 9);
-    opacity:.90;
-}
-
-
-img .other-menu{
-    width:auto;
-    height:100%;
-    object-fit: cover;
-}
-
-
-hr{
-    color:rgba(4, 34, 4, 0.966);
-    
-}
-
-#contact-us-section{
-    
-    background: #8dca8d;
-    border-top: rgb(110, 53, 53) solid 4px;
-    }
-
-
-
-    @media(max-width:768px){
-        .navbar{
-            background: #8dca8d;
-            border-bottom: rgb(110, 53, 53) solid 4px;
-        }
-
-       
-        .nav-link:hover{
-            border-bottom:none;
-        }
-
-        #showcase-section{
-            min-height:500px;
-        }
-
-        #showcase-section h1{
-            font-size:4rem;
-        }
-    }
