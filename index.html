@@ -15,66 +15,37 @@
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.1.1/pdfobject.js"></script>
-    <title>SJN - FOGS</title>
+    <title>CFC Discussion Guides</title>
 </head>
 
 <body>
     <section class="text-center">
-        <h3 class='mt-4'>ST. JOHN NEUMANN PARISH</h3>
-        <h3>FOGS FLORES DE MAYO / Bilingual MASS</h3>
-        <h3 class="text-danger">Saturday, May 11, 2019 at 5PM</h3>
-    </section>
-
-    <section class="text-center">
-        <h3 class="m-5">
-            SONG LINE-UP
-        </h3>
+        <h3 class='mt-4'>Couple For Christ</h3>
+        <h3>Discussion Guides</h3>
     </section>
 
 
     <section class="container">
         <div class="row">
-            <div class="col-md-3"><em>ENTRANCE:</em></div>
+            <div class="col-md-3"><em>Week 1</em></div>
             <div class="col-md-9 text-danger">
-                <a class="btn btn-success btn-block" data-toggle="collapse" href="#entrance" role="button"
-                    aria-expanded="false" id="salve-btn">
-                    SALVE REGINA
+                <a class="btn btn-success btn-block" data-toggle="collapse" href="#week1" role="button"
+                    aria-expanded="false" id="week1-btn">
+                    GOD's LOVE
                 </a>
-                <a class="btn btn-success btn-block" data-toggle="collapse" href="#entrance" role="button"
-                    aria-expanded="false" id="panginoon-btn">
-                    PANGINOON MAAWA KA
-                </a>
-
-
             </div>
         </div>
-        <div id="entrance" class="collapse" style="overflow: scroll"></div>
+        <div id="week1" class="collapse" style="overflow: scroll"></div>
 
-        <div class="row">
+<!-- TEXT -->
+        <!-- <div class="row">
             <div class="col-md-3"><em>GLORIA:</em></div>
             <div class="col-md-9 mocs">
                 GLORY (MOCS)
             </div>
-        </div>
+        </div> -->
 
-        <div class="row">
-            <div class="col-md-3"><em>RESPONSORIAL:</em></div>
-            <div class="col-md-9">
-                <div class="">
-                    TBD
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-3"><em>HOMILY:</em></div>
-            <div class="col-md-9">
-                <div class="mocs">
-                    ALLELUIA (MOCS)
-                </div>
-            </div>
-        </div>
-
+       
         <div class="row">
             <div class="col-md-3"><em>OFFERTORY:</em></div>
             <div class="col-md-9">
@@ -168,9 +139,9 @@
     <script>
         $(document).ready(function () {
 
-            $(document).on('click', '#salve-btn', () => {
-                $('#entrance').empty();
-                PDFObject.embed("./assets/song_files/01 SALVE REGINA.pdf", "#entrance");
+            $(document).on('click', '#week1-btn', () => {
+                $('#week1').empty();
+                PDFObject.embed("./assets/song_files/01 SALVE REGINA.pdf", "#week1");
             })
 
             $(document).on('click', '#panginoon-btn', () => {
